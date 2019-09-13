@@ -4,12 +4,12 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/node:11.8.0
+      - image: circleci/openjdk:8u212-stretch
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
-       - image: selenium/standalone-chrome:3.0.1
+      # - image: selenium/standalone-chrome:3.0.1
 
     working_directory: ~/repo
     steps:
