@@ -25,5 +25,5 @@ jobs:
               java -jar selenium-server-standalone-3.5.3.jar -log test-reports/selenium.log
               background: true
               
-              java -jar selenium-server-standalone-3.5.3.jar MyClass.jar   
+              java -jar MyClass.jar   
              
