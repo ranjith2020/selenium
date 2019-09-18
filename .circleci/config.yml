@@ -30,6 +30,6 @@ jobs:
               ls
               cd src && ls
               cd newpackage && ls
-              #javac -cp MyClass.java
+              javac -cp MyClass.java
               #java MyClass   
               #no_output_timeout: 30m 
