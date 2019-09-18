@@ -29,7 +29,6 @@ jobs:
               pwd
               ls
               cd src && ls
-              cd newpackage && ls
-              javac -cp MyClass.java
+              cd newpackage && ls && javac MyClass.java
               #java MyClass   
               #no_output_timeout: 30m 
