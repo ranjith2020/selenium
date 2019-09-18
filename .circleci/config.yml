@@ -26,6 +26,7 @@ jobs:
            command: |
              # java -jar selenium-server-standalone-3.5.3.jar -log test-reports/selenium.log
              #background: true
-              javac -cp ~/newpackage/MyClass.java
+              $pwd
+              javac -cp MyClass.java
               java MyClass   
               no_output_timeout: 30m 
