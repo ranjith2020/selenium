@@ -22,13 +22,19 @@ jobs:
               curl http://chromedriver.storage.googleapis.com/2.23/chromedriver_linux64.zip | gzip -dc > chromedriver
               chmod +x chromedriver
        - run:
-           name: Start Selenium
+           name: Start appium
            command: |
              # java -jar selenium-server-standalone-3.5.3.jar -log test-reports/selenium.log
              #background: true
               pwd
-              ls
-              cd src && ls
-              cd newpackage && ls && javac MyClass.java
-              cd .. && java newpackage.MyClass   
+              #ls
+              #cd src && ls
+              #cd newpackage && ls && javac MyClass.java
+              #cd .. && java newpackage.MyClass
+              sudo apt-get install build-essential \
+              curl git m4 ruby texinfo libbz2-dev \
+              libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev    
+              sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+
+               
               #no_output_timeout: 30m 
