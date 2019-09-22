@@ -35,6 +35,18 @@ jobs:
               curl git m4 ruby texinfo libbz2-dev \
               libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev    
               sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+              
+              # Add this to end of bashrc
+              vim ~/.bashrc
 
-               
+              export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+              export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
+              export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
+
+              # Source bashrc
+              source ~.bashrc
+              
+              brew install gcc
+
+ 
               #no_output_timeout: 30m 
