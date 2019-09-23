@@ -63,7 +63,7 @@ jobs:
               
               npm install appium-doctor -g
               
-              cd /home/circleci/repo/lib/node_modules/appium/build/lib
+              cd /home/circleci/repo/.npm-packages/lib/node_modules/appium/build/lib
               ls
  
               #no_output_timeout: 30m 
