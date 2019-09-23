@@ -37,6 +37,7 @@ jobs:
               sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
               
               # Add this to end of bashrc
+              sudo apt-get install vim
               vim ~/.bashrc
 
               export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
@@ -47,6 +48,9 @@ jobs:
               source ~.bashrc
               
               brew install gcc
-
+              
+              brew update
+              brew install node
+              brew link node
  
               #no_output_timeout: 30m 
