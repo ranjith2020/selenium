@@ -40,8 +40,8 @@ jobs:
               sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
               
               # Add this to end of bashrc
-              gksu gedit ~/.bashrc
-              c
+              
+              
               export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
               export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
               export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
@@ -64,6 +64,8 @@ jobs:
               
               npm install appium-doctor -g
               
+              cd /home/linuxbrew/.linuxbrew/bin
+              ls
               cd /home/linuxbrew/.linuxbrew/lib/node_modules
               ls
               appium-doctor
