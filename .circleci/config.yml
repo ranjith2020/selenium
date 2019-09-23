@@ -59,7 +59,7 @@ jobs:
               brew install node
               brew link node
               
-              npm install appium
+              npm install -g appium
               npm install wd
               
               npm install appium-doctor -g
@@ -69,4 +69,6 @@ jobs:
               cd /home/linuxbrew/.linuxbrew/lib/node_modules
               ls
               appium-doctor
+              cd /usr/local/lib/node_modules/appium
+              ls
               #no_output_timeout: 30m 
