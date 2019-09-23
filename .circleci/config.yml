@@ -63,7 +63,7 @@ jobs:
               
               npm install appium-doctor -g
               
-              cd /home/linuxbrew/.linuxbrew/lib/node_modules
+              cd /home/circleci/repo/lib/node_modules/appium/build/lib
               ls
  
               #no_output_timeout: 30m 
