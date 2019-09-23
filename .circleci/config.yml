@@ -53,5 +53,10 @@ jobs:
               brew update
               brew install node
               brew link node
+              
+              npm install appium
+              npm install wd
+              
+              Appium
  
               #no_output_timeout: 30m 
