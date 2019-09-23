@@ -41,14 +41,12 @@ jobs:
               
               # Add this to end of bashrc
               
-              vim ~/.bashrc
-
               export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
               export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
               export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
 
               # Source bashrc
-              source ~.bashrc
+              
               
               brew install gcc
               
