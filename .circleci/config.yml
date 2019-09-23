@@ -37,7 +37,7 @@ jobs:
               sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
               
               # Add this to end of bashrc
-              sudo apt-get install vim
+              sudo pacman -S vim
               vim ~/.bashrc
 
               export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
