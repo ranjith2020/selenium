@@ -57,6 +57,8 @@ jobs:
               npm install appium
               npm install wd
               
-              Appium
+              npm install appium-doctor -g
+              
+              which appium
  
               #no_output_timeout: 30m 
