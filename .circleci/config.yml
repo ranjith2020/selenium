@@ -31,13 +31,16 @@ jobs:
               #cd src && ls
               #cd newpackage && ls && javac MyClass.java
               #cd .. && java newpackage.MyClass
+              
+              
+              sudo apt-get install vim
               sudo apt-get install build-essential \
               curl git m4 ruby texinfo libbz2-dev \
               libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev    
               sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
               
               # Add this to end of bashrc
-              #sudo apt-get install vim
+              
               vim ~/.bashrc
 
               export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
