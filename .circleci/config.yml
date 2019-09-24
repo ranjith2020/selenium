@@ -64,8 +64,9 @@ jobs:
               
               npm install appium-doctor -g
               
-              cd /home/linuxbrew/.linuxbrew/bin/appium
+              cd /home/linuxbrew/.linuxbrew/bin/
               ls
+              appium
               cd /home/linuxbrew/.linuxbrew/lib/node_modules/appium
               ls
               appium-doctor
