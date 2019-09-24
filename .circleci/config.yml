@@ -69,6 +69,8 @@ jobs:
               cd /home/linuxbrew/.linuxbrew/lib/node_modules/appium
               ls
               appium-doctor
+              cd /home/circleci/Android/Sdk/
+              ls
               cd /home/linuxbrew/.linuxbrew/bin/
               ls
               appium
