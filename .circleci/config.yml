@@ -60,7 +60,7 @@ jobs:
               brew link node
               
                #sudo apt udate && sudo apt install android-sdk
-              ./android update sdk --no-ui
+              update sdk --no-ui
               pwd
               npm install -g appium
               npm install wd
