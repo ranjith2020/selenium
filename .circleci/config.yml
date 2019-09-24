@@ -59,7 +59,7 @@ jobs:
               brew install node
               brew link node
               
-              sudo apt install android-adk
+              sudo apt install android-sdk
               
               npm install -g appium
               npm install wd
