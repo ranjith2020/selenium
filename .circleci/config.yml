@@ -64,12 +64,11 @@ jobs:
               
               npm install appium-doctor -g
               
-              cd /home/linuxbrew/.linuxbrew/bin/
-              ls
-              appium
               cd /home/linuxbrew/.linuxbrew/lib/node_modules/appium
               ls
               appium-doctor
-              cd /usr/local/lib/node_modules/appium
+              cd /home/linuxbrew/.linuxbrew/bin/
               ls
-              #no_output_timeout: 30m 
+              appium
+              
+              
