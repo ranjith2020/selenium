@@ -60,8 +60,9 @@ jobs:
               brew link node
               
                #sudo apt udate && sudo apt install android-sdk
-              sudo apt-get install ubuntu-make
-              umake android 
+              wget https://d1.google.com/android/android-sdk_r24.4.1-linux.tgz
+              tar xf android-sdk*-linux.zip
+              
               pwd 
               npm install -g appium
               npm install wd
