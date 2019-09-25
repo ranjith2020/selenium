@@ -58,11 +58,12 @@ jobs:
               brew update
               brew install node
               brew link node
-              mkdir android-sdk
-              cd android-sdk
+              
               sudo apt update && sudo apt install android-sdk
-              ls
+              
               pwd 
+              ls
+              cd /usr/lib
               ls
               npm install -g appium
               npm install wd
