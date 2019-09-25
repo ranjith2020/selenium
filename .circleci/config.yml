@@ -63,7 +63,7 @@ jobs:
               
               pwd 
               
-              cd /usr/lib/android-sdk
+              cd /usr/lib/android-sdk/platform-tools
               ls
               #npm install -g appium
               #npm install wd
