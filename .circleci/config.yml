@@ -59,11 +59,11 @@ jobs:
               brew install node
               brew link node
               
-               #sudo apt udate && sudo apt install android-sdk
-              wget https://d1.google.com/android/android-sdk_r24.4.1-linux.tgz
-              tar xf android-sdk*-linux.zip
+              sudo apt udate && sudo apt install android-sdk
+              
               
               pwd 
+              ls
               npm install -g appium
               npm install wd
               
