@@ -65,10 +65,10 @@ jobs:
               
               cd /usr/lib/android-sdk
               ls
-              npm install -g appium
-              npm install wd
+              #npm install -g appium
+              #npm install wd
               
-              npm install appium-doctor -g
+              #npm install appium-doctor -g
               
               
               #appium-doctor
