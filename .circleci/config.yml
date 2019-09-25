@@ -60,8 +60,8 @@ jobs:
               brew link node
               
               sudo apt udate && sudo apt install android-sdk
-              
-              
+              cd /src
+              ls
               pwd 
               ls
               npm install -g appium
@@ -69,10 +69,9 @@ jobs:
               
               npm install appium-doctor -g
               
-              cd /home/linuxbrew/.linuxbrew/Homebrew/Library/lib
-              ls
+              
               appium-doctor
-              cd /home/circleci
+              cd /usr
               ls
               cd /home/linuxbrew/.linuxbrew/bin/
               ls
