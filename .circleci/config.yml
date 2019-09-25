@@ -60,7 +60,8 @@ jobs:
               brew link node
               
                #sudo apt udate && sudo apt install android-sdk
-              sudo snap install android-studio
+              sudo apt-get install ubuntu-make
+              umake android 
               pwd 
               npm install -g appium
               npm install wd
