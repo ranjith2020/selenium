@@ -60,8 +60,8 @@ jobs:
               brew link node
               
                #sudo apt udate && sudo apt install android-sdk
-              wget https://developer.android.com/studio/#downloads
-              unzip sdk-tools-linux-3859397.zip
+              sudo apt-get install snapd
+              sudo snap install android-studio --classic
               pwd
               npm install -g appium
               npm install wd
