@@ -58,9 +58,9 @@ jobs:
               brew update
               brew install node
               brew link node
+              mkdir android-sdk
               
               sudo apt udate && sudo apt install android-sdk
-              cd src
               ls
               pwd 
               ls
