@@ -60,7 +60,7 @@ jobs:
               brew link node
               
               sudo apt udate && sudo apt install android-sdk
-              cd /src
+              cd src
               ls
               pwd 
               ls
@@ -71,7 +71,7 @@ jobs:
               
               
               appium-doctor
-              cd /usr
+              cd usr
               ls
               cd /home/linuxbrew/.linuxbrew/bin/
               ls
