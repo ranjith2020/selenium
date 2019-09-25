@@ -62,8 +62,8 @@ jobs:
               sudo apt update && sudo apt install android-sdk
               
               pwd 
-              ls
-              cd /usr/lib
+              
+              cd /usr/lib/android-sdk
               ls
               npm install -g appium
               npm install wd
@@ -71,11 +71,7 @@ jobs:
               npm install appium-doctor -g
               
               
-              appium-doctor
-              cd usr
-              ls
-              cd /home/linuxbrew/.linuxbrew/bin/
-              ls
+              #appium-doctor
               appium
               
               
