@@ -65,10 +65,10 @@ jobs:
               
               cd /usr/lib/android-sdk/platform-tools
               ls
-              npm install -g appium
-              npm install wd
+              sudo npm install -g appium@1.14.2 --unsafe-perm=true --allow-root
+              sudo npm install wd
               
-              npm install appium-doctor -g
+              sudo npm install appium-doctor -g
               
               
               #appium-doctor
