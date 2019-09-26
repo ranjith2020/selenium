@@ -41,7 +41,7 @@ jobs:
               
               # Add this to end of bashrc
               
-              
+                            
               export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
               export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
               export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
@@ -52,6 +52,7 @@ jobs:
               source ~/.bashrc
               # Source bashrc
               
+              npm init --yes
               
               brew install gcc
               
@@ -63,13 +64,11 @@ jobs:
               
               pwd 
               
-              cd /usr/lib/android-sdk/platform-tools
-              ls
-              
+                            
               npm install -g appium@1.14.2 --unsafe-perm=true --allow-root
-              npm install wd
+              npm install wd -g --unsafe-perm=true --allow-root
               
-              npm install appium-doctor -g
+              npm install appium-doctor -g --unsafe-perm=true --allow-root
               
               
               #appium-doctor
