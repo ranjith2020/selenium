@@ -68,7 +68,8 @@ jobs:
               #cd /usr/lib/android-sdk/
               #ls
               mkdir android-sdk
-              cd android-sdk
+              pwd 
+              ls
               
               sudo wget https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
               sudo unzip sdk-tools-linux-4333796.zip
