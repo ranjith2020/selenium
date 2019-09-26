@@ -59,19 +59,20 @@ jobs:
               brew install node
               brew link node
               
-              sudo apt update && sudo apt install android-sdk
+              #sudo apt update && sudo apt install android-sdk
               
               pwd 
               
               sudo apt-get install gradle
 
-              cd /usr/lib/android-sdk/
-              ls
+              #cd /usr/lib/android-sdk/
+              #ls
+              #mkdir android
+              #cd /usr/lib/android-sdk/android
+              
               sudo wget https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
               sudo unzip sdk-tools-linux-4333796.zip
-              cd tools/bin
-              ls
-              
+                            
               npm install -g appium@1.14.2 --unsafe-perm=true --allow-root
               npm install wd -g --unsafe-perm=true --allow-root
               
