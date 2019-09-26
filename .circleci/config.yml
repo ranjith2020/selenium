@@ -52,8 +52,7 @@ jobs:
               source ~/.bashrc
               # Source bashrc
               
-              npm init --yes
-              
+                         
               brew install gcc
               
               brew update
