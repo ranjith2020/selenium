@@ -68,6 +68,7 @@ jobs:
               #cd /usr/lib/android-sdk/
               #ls
               mkdir android-sdk
+              cd android-sdk
               pwd 
               ls
               
