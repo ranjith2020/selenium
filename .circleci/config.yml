@@ -65,10 +65,10 @@ jobs:
               
               sudo apt-get install gradle
 
-              cd /usr/lib/android-sdk/tools/bin
+              cd /usr/lib/android-sdk/
               ls
               sudo wget https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
-              sudo unzip sdk-tools-darwin-4333796.zip
+              sudo unzip sdk-tools-linux-4333796.zip
               cd tools/bin
               ls
               
