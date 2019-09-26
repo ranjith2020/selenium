@@ -74,8 +74,7 @@ jobs:
               
               sudo wget https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
               sudo unzip sdk-tools-linux-4333796.zip
-              cd tools/bin/sdkmanager
-              --install "system-images;android-24;google_apis_playstore;x86"
+              cd tools/bin/sdkmanager --install "system-images;android-24;google_apis_playstore;x86"
               
               pwd
               ls
