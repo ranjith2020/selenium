@@ -63,14 +63,17 @@ jobs:
               
               pwd 
               
-                            
+              sudo apt-get install gradle
+
+              cd /usr/lib/android-sdk/tools/bin
+              ls
+              
               npm install -g appium@1.14.2 --unsafe-perm=true --allow-root
               npm install wd -g --unsafe-perm=true --allow-root
               
               npm install appium-doctor -g --unsafe-perm=true --allow-root
               
-              cd /usr/lib/android-sdk/tools/bin
-              ls
+              
               
               appium-doctor
               appium
