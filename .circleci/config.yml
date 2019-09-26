@@ -69,7 +69,7 @@ jobs:
               
               npm install appium-doctor -g --unsafe-perm=true --allow-root
               
-              cd /usr/lib/android-sdk/tools
+              cd /usr/lib/android-sdk/tools/bin
               ls
               
               appium-doctor
