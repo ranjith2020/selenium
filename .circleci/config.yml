@@ -65,7 +65,11 @@ jobs:
               
               sudo apt-get install gradle
 
-              cd /usr/lib/android-sdk/tools/bin
+              cd /usr/lib/android-sdk/
+              ls
+              sudo wget https://d1.google.com/android/repository/sdk-tools-darwin-4333796.zip 
+              sudo unzip sdk-tools-darwin-4333796.zip
+              cd tools/bin
               ls
               
               npm install -g appium@1.14.2 --unsafe-perm=true --allow-root
