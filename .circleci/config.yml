@@ -74,6 +74,12 @@ jobs:
               
               sudo wget https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
               sudo unzip sdk-tools-linux-4333796.zip
+              
+              npm install appium-doctor -g --unsafe-perm=true --allow-root
+                          
+              
+              appium-doctor
+              
               sudo apt install openjdk-8-jdk
               java -version
               sudo $ANDROID_HOME/tools/bin/sdkmanager --install "system-images;android-27;google_apis_playstore;x86" 
