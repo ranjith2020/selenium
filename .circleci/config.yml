@@ -77,9 +77,12 @@ jobs:
               sudo apt-get -y update && sudo apt-get -y install openjdk-8-jdk java-common
               java -version              
               
+              npm install appium-doctor -g --unsafe-perm=true --allow-root
+                          
               
+              appium-doctor
               
-              sudo apt-get install gradle
+              ##sudo apt-get install gradle
 
               #cd /usr/lib/android-sdk/
               #ls
