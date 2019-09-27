@@ -73,7 +73,7 @@ jobs:
               pwd 
               ls
               
-              sudo wget https://dl.google.com/android/repository/tools_r25.2.3-macosx.zip
+              sudo wget https://dl.google.com/android/repository/tools_r25.3.0-macosx.zip
               sudo unzip tools_r25.2.3-macosx.zip
               
               ls
@@ -88,7 +88,7 @@ jobs:
               #sudo apt install openjdk-8-jdk
               #java -version
               
-              sudo $ANDROID_HOME/tools/android sdk
+              sudo $ANDROID_HOME/tools/android list sdk --all
               
               
              # sudo $ANDROID_HOME/tools/bin/sdkmanager --update "system-images;android-27;google_apis_playstore;x86" 
