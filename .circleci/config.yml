@@ -64,7 +64,7 @@ jobs:
               
               pwd
               
-              cd usr
+              cd /usr
               ls               
               
               cd usr/lib
