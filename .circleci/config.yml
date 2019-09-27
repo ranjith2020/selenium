@@ -73,8 +73,8 @@ jobs:
               pwd 
               ls
               
-              sudo wget https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
-              sudo unzip sdk-tools-linux-4333796.zip
+              sudo wget https://dl.google.com/android/repository/tools_r25.2.3-macosx.zip
+              sudo unzip tools_r25.2.3-macosx.zip
               
               npm install appium-doctor -g --unsafe-perm=true --allow-root
                           
