@@ -88,9 +88,9 @@ jobs:
               #sudo apt install openjdk-8-jdk
               #java -version
               
-              sudo $ANDROID_HOME/tools/bin/sdkmanager --list
+              sudo $ANDROID_HOME/tools/android sdk
               
-              sudo $ANDROID_HOME/tools/bin/sdkmanager --update
+              
              # sudo $ANDROID_HOME/tools/bin/sdkmanager --update "system-images;android-27;google_apis_playstore;x86" 
                                  
               npm install -g appium@1.14.2 --unsafe-perm=true --allow-root
