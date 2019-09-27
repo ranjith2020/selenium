@@ -76,6 +76,11 @@ jobs:
               sudo wget https://dl.google.com/android/repository/tools_r25.2.3-macosx.zip
               sudo unzip tools_r25.2.3-macosx.zip
               
+              ls
+              cd tools
+              sudo ./android update sdk--no ui
+              
+              
               npm install appium-doctor -g --unsafe-perm=true --allow-root
                           
               
