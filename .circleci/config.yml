@@ -74,7 +74,7 @@ jobs:
               
               sudo wget https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
               sudo unzip sdk-tools-linux-4333796.zip
-              $ANDROID_HOME/tools/bin/sdkmanager --install "system-images;android-24;google_apis_playstore;x86"
+              $ANDROID_HOME/tools/bin/sdkmanager sudo --install "system-images;android-24;google_apis_playstore;x86"
                                  
               npm install -g appium@1.14.2 --unsafe-perm=true --allow-root
               npm install wd -g --unsafe-perm=true --allow-root
