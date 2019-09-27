@@ -78,7 +78,7 @@ jobs:
               
               ls
               cd tools
-              sudo ./android update sdk--no ui
+              sudo ./android update sdk
               
               
               npm install appium-doctor -g --unsafe-perm=true --allow-root
