@@ -62,7 +62,13 @@ jobs:
               
               #sudo apt update && sudo apt install android-sdk
               
-              pwd 
+              pwd
+              
+              cd usr/local
+              ls               
+              
+              cd usr/lib
+              ls
               
               sudo apt-get install gradle
 
