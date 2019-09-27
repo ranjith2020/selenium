@@ -68,8 +68,13 @@ jobs:
               ls               
               cd /lib
               ls
-              cd /usr/local
+              cd /usr/local/lib
               ls
+              
+              
+              sudo
+              
+              
               
               sudo apt-get install gradle
 
