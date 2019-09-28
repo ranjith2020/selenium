@@ -111,7 +111,7 @@ jobs:
               sudo $ANDROID_HOME/tools/bin/sdkmanager --list
               
               
-              sudo $ANDROID_HOME/tools/bin/sdkmanager --update "system-images;android-24;google_apis_playstore;x86" 
+              sudo $ANDROID_HOME/tools/bin/sdkmanager "system-images;android-24;google_apis_playstore;x86" 
               sudo $ANDROID_HOME/tools/bin/avdmanager create avd -n nexus -k "system-images;android-24;google_apis_playstore;x86"
               sudo $ANDROID_HOME/tools/bin/avdmanager list avd
                                  
