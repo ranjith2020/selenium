@@ -86,7 +86,8 @@ jobs:
 
               #cd /usr/lib/android-sdk/
               #ls
-              pwd
+              cd /home/circleci/repo/
+              
               mkdir android-sdk
               cd android-sdk
               pwd 
