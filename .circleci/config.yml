@@ -99,10 +99,10 @@ jobs:
               ls
               mkdir licenses
               cd licenses
-              cat > android-sdk-license
+              touch android-sdk-license
               
               
-              print f "24333f8a63b6825ea9c5514f83c2829b004d1fee\n" > android-sdk-license
+              printf "24333f8a63b6825ea9c5514f83c2829b004d1fee\n" >> android-sdk-license
 
               ls
               
