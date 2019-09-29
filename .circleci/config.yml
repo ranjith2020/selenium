@@ -97,7 +97,12 @@ jobs:
               sudo unzip sdk-tools-darwin-3859397.zip
               
               ls
-              cd tools
+              mkdir licenses/android-sdk-license
+              print f "24333f8a63b6825ea9c5514f83c2829b004d1fee" > ~/android-sdk/licenses/android-sdk-license
+
+              ls
+              
+              #cd tools
               
               
               npm install appium-doctor -g --unsafe-perm=true --allow-root
@@ -112,7 +117,8 @@ jobs:
               
               
               sudo $ANDROID_HOME/tools/bin/sdkmanager "system-images;android-24;default;x86" 
-              sudo $ANDROID_HOME/tools/bin/sdkmanager --licenses
+              #sudo $ANDROID_HOME/tools/bin/sdkmanager --licenses
+              
               sudo $ANDROID_HOME/tools/bin/avdmanager create avd --force --name nexus --abi google_apis_playstore/x86 --package "system-images;android-24;default;x86"
               sudo $ANDROID_HOME/tools/bin/avdmanager list avd
                                  
