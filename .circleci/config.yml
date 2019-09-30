@@ -93,12 +93,11 @@ jobs:
               pwd 
               ls
               
-              #sudo wget https://dl.google.com/android/repository/sdk-tools-darwin-3859397.zip
-              #sudo unzip sdk-tools-darwin-3859397.zip
+              sudo wget https://dl.google.com/android/repository/sdk-tools-darwin-3859397.zip
+              sudo unzip sdk-tools-darwin-3859397.zip
               
               
-              sudo wget https://dl.google.com/android/repository/build-tools_r23.0.3-linux.zip
-              sudo unzip build-tools_r23.0.3-linux.zip
+              
               
               ls
               mkdir licenses
