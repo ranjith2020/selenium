@@ -123,12 +123,12 @@ jobs:
               sudo $ANDROID_HOME/tools/bin/sdkmanager --list
               
               
-              sudo $ANDROID_HOME/tools/bin/sdkmanager "system-images;android-24;default;x86_64" 
+              #sudo $ANDROID_HOME/tools/bin/sdkmanager "system-images;android-24;default;x86_64" 
               #sudo $ANDROID_HOME/tools/bin/sdkmanager --licenses
-              
-              echo no| sudo $ANDROID_HOME/tools/bin/avdmanager create avd --force -n nexus -k "system-images;android-24;default;x86_64"
-              
-              
+              sudo $ANDROID_HOME/tools/bin/sdkmanager "platform-tools" "platforms;android-26" "extras;intel;Hardware_Accelerated_Execution_Manager" "build-tools;26.0.0" "system-images;android-26;google_apis;x86" "emulator" --verbose
+              #echo no| sudo $ANDROID_HOME/tools/bin/avdmanager create avd --force -n nexus -k "system-images;android-24;default;x86_64"
+              echo no| sudo $ANDROID_HOME/tools/bin/avdmanager create avd -n Pixel_2_API_26 -k "system-images;android-26;google_apis;x86" -g google_apis -d "Nexus 5"
+##(yes | sdkmanager "platform-tools" "platforms;android-26" "extras;intel;Hardware_Accelerated_Execution_Manager" "build-tools;26.0.0" "system-images;android-26;google_apis;x86" "emulator" --verbose) || true
               
               sudo $ANDROID_HOME/tools/bin/avdmanager list avd
                                  
@@ -141,9 +141,8 @@ jobs:
               
               appium-doctor
               uname -a
-              sudo $ANDROID_HOME/tools/emulator -list-avds
-              
-              sudo $ANDROID_HOME/tools/emulator -avd nexus 
+              sudo $ANDROID_HOME/tools/emulator @Pixel_2_API_26 -skin 1080x2066 -memory 2048 -noaudio
+             # sudo $ANDROID_HOME/tools/emulator -avd nexus 
               
               
               appium
