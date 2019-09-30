@@ -137,7 +137,7 @@ jobs:
               
               
               appium-doctor
-              echo no| sudo $ANDROID_HOME/tools/bin/emulator -avd nexus 
+              echo no| sudo $ANDROID_HOME/tools/emulator -avd nexus 
               background=true
               
               appium
