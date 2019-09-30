@@ -120,10 +120,10 @@ jobs:
               sudo $ANDROID_HOME/tools/bin/sdkmanager --list
               
               
-              sudo $ANDROID_HOME/tools/bin/sdkmanager "system-images;android-24;default;x86" 
+              sudo $ANDROID_HOME/tools/bin/sdkmanager "system-images;android-24;default;x86_64" 
               #sudo $ANDROID_HOME/tools/bin/sdkmanager --licenses
               
-              echo no| sudo $ANDROID_HOME/tools/bin/avdmanager create avd --force -n nexus -k "system-images;android-24;default;x86"
+              echo no| sudo $ANDROID_HOME/tools/bin/avdmanager create avd --force -n nexus -k "system-images;android-24;default;x86_64"
               
               
               
@@ -137,6 +137,7 @@ jobs:
               
               
               appium-doctor
+              uname -a
               echo no| sudo $ANDROID_HOME/tools/emulator -avd nexus 
               background=true
               
