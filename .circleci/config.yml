@@ -124,8 +124,9 @@ jobs:
               #sudo $ANDROID_HOME/tools/bin/sdkmanager --licenses
               
               echo no| sudo $ANDROID_HOME/tools/bin/avdmanager create avd --force -n nexus -k "system-images;android-24;default;x86"
-              sudo $ANDROID_HOME/tools/bin/emulator -avd nexus 
-              background=true
+              
+              #sudo $ANDROID_HOME/tools/bin/emulator -avd nexus 
+              #background=true
               
               sudo $ANDROID_HOME/tools/bin/avdmanager list avd
                                  
