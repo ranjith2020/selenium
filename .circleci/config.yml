@@ -141,6 +141,8 @@ jobs:
               
               appium-doctor
               uname -a
+              sudo $ANDROID_HOME/tools/emulator -list-avds
+              
               sudo $ANDROID_HOME/tools/emulator -avd nexus 
               
               
