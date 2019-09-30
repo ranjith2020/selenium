@@ -138,8 +138,8 @@ jobs:
               
               appium-doctor
               uname -a
-              echo no| sudo $ANDROID_HOME/tools/emulator -avd nexus 
-              background=true
+              sudo $ANDROID_HOME/tools/emulator -avd nexus 
+              
               
               appium
               
