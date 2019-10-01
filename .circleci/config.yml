@@ -113,10 +113,10 @@ jobs:
               #cd tools
               
               
-              npm install appium-doctor -g --unsafe-perm=true --allow-root
+              #npm install appium-doctor -g --unsafe-perm=true --allow-root
                           
               
-              appium-doctor
+              #appium-doctor
               
               #sudo apt install openjdk-8-jdk
               #java -version
