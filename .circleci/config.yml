@@ -121,7 +121,7 @@ jobs:
               #sudo apt install openjdk-8-jdk
               #java -version
               
-              sudo $ANDROID_HOME/tools/bin/sdkmanager --list
+              #sudo $ANDROID_HOME/tools/bin/sdkmanager --list
               
               
               #sudo $ANDROID_HOME/tools/bin/sdkmanager "system-images;android-24;default;x86_64" 
