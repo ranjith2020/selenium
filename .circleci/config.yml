@@ -4,7 +4,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/android:api-26-alpha
+      - image: circleci/android:api-28
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -125,9 +125,9 @@ jobs:
               
               #sudo $ANDROID_HOME/tools/bin/sdkmanager "system-images;android-24;default;x86_64" 
               #sudo $ANDROID_HOME/tools/bin/sdkmanager --licenses
-              sudo $ANDROID_HOME/tools/bin/sdkmanager "platform-tools" "platforms;android-26" "build-tools;26.0.0" "system-images;android-26;google_apis;x86" "emulator" --verbose
+              sudo $ANDROID_HOME/tools/bin/sdkmanager "system-images;android-22;default;armeabi-v7a" && echo "no"
               #echo no| sudo $ANDROID_HOME/tools/bin/avdmanager create avd --force -n nexus -k "system-images;android-24;default;x86_64"
-              echo no| sudo $ANDROID_HOME/tools/bin/avdmanager create avd -n Pixel_2_API_26 -k "system-images;android-26;google_apis;x86" -g google_apis -d "Nexus 5"
+              echo no| sudo $ANDROID_HOME/tools/bin/avdmanager create avd -n test -k "system-images;android-22;default;armeabi-v7a" 
               
               #sudo $ANDROID_HOME/tools/bin/avdmanager list avd
                                  
@@ -140,7 +140,7 @@ jobs:
               
               appium-doctor
               uname -a
-              sudo $ANDROID_HOME/tools/emulator @Pixel_2_API_26 -skin 1080x2066 -memory 2048 -noaudio
+              sudo $ANDROID_HOME/tools/emulator - avd test -noaudio -no-boot-anim -no-window -accel on
              # sudo $ANDROID_HOME/tools/emulator -avd nexus 
               
               
